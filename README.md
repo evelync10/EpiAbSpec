@@ -83,9 +83,19 @@ PyRosetta and some model weights may require separate registration or download s
 
 ## Download Model Weights and Required Resources
 
-Large model weights and resource files are distributed separately through **GitHub Releases** because of their file size.
+Large model weights and `Epitope_lib` resource files are distributed separately through **GitHub Releases** because of their file size.
 
-Download the resource archive from the repository's **Releases** page and extract it directly into the repository root.
+### Download
+
+The pretrained model weights and the complete `Epitope_lib` can be downloaded from the following release:
+
+**[Download EpiAbSpec weights and Epitope_lib](https://github.com/evelync10/EpiAbSpec/releases/tag/EpiAbSpec)**
+
+Release page:
+
+https://github.com/evelync10/EpiAbSpec/releases/tag/EpiAbSpec
+
+After downloading, extract the release files directly into the **repository root**. The extracted `weights/` and `Epitope_lib/` directories should be at the same level as `predict.py`.
 
 After extraction, verify that the following resources exist:
 
