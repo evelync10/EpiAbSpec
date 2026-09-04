@@ -1,0 +1,20 @@
+# Core numerical and data packages
+numpy
+pandas
+scipy
+scikit-learn
+biopython
+tqdm
+
+# Deep learning and graph inference.
+# Install versions matching the target CUDA/PyTorch platform.
+torch
+torch-geometric
+torch-scatter
+torch-cluster
+
+# Antibody structure and representation tools.
+ablang
+abnumber
+igfold
+pymol-open-source
