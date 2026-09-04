@@ -60,15 +60,13 @@ Large neural-network weights and feature datasets are not intended to be committ
 
 ## Requirements
 
-The pipeline is intended for Linux with Python 3.10 or 3.11.
+The pipeline is intended for Linux with Python 3.8.
 
-Install the Python packages in `requirements.txt`, then install the matching PyTorch Geometric packages for the selected PyTorch/CUDA version.
+Install the Python packages in `environment.yml`, then install the matching PyTorch Geometric packages for the selected PyTorch/CUDA version.
 
 ```bash
-pip install -r requirements.txt
+pip install -r environment.yml
 ```
-
-Alternatively, `environment.yml` is provided as an environment specification.
 
 The following components are external or platform-sensitive:
 
@@ -81,7 +79,7 @@ The following components are external or platform-sensitive:
 - DSSP, exposed here as the executable `mkdssp`
 - a PSSM generation workflow; this repository contains PSSM parsing, not a general-purpose PSSM generator
 
-PyRosetta and some model weights may require separate registration or download steps. Do not assume that `pip install -r requirements.txt` installs the complete environment.
+PyRosetta and some model weights may require separate registration or download steps. Do not assume that `pip install -r environment.yml` installs the complete environment.
 
 ## Download Model Weights and Required Resources
 
