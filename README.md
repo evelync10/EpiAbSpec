@@ -65,7 +65,7 @@ The pipeline is intended for Linux with Python 3.8.
 Install the Python packages in `environment.yml`, then install the matching PyTorch Geometric packages for the selected PyTorch/CUDA version.
 
 ```bash
-pip install -r environment.yml
+conda env create -f environment.yml
 ```
 
 The following components are external or platform-sensitive:
@@ -79,7 +79,7 @@ The following components are external or platform-sensitive:
 - DSSP, exposed here as the executable `mkdssp`
 - a PSSM generation workflow; this repository contains PSSM parsing, not a general-purpose PSSM generator
 
-PyRosetta and some model weights may require separate registration or download steps. Do not assume that `pip install -r environment.yml` installs the complete environment.
+PyRosetta and some model weights may require separate registration or download steps. Do not assume that `conda env create -f environment.yml` installs the complete environment.
 
 ## Download Model Weights and Required Resources
 
