@@ -4,7 +4,6 @@ This repository contains an antibody-epitope binding prediction pipeline based o
 
 Given an antibody identifier with its FASTA and V/J annotation, the pipeline predicts a score for every epitope in `Epitope_lib` and writes a ranked CSV file.
 
-> The current implementation outputs a sigmoid-transformed model score. It has not been probability-calibrated, so `Prediction` should be interpreted as a model confidence score rather than a measured binding probability.
 
 ## Pipeline
 
@@ -140,12 +139,3 @@ This may take substantial time and disk space because it creates intermediate an
 - Five checkpoints are loaded and their predictions are averaged.
 - `mkdssp` in this directory is a Linux executable. Use a system DSSP installation on other platforms and update the inference command if needed.
 - `raw_pssm` must contain a PSSM for each antibody before prediction.
-- Generated `antibody/`, `tmp/`, and `output/` content should be treated as run artifacts unless intentionally included as a small example.
-
-## Training code
-
-`main.py` is the training/Optuna entry point, but it depends on a `utils` module that is not included in the current folder snapshot. The repository is therefore organized primarily for inference. Training requires restoring that module and the training dataset format separately.
-
-## Data and model provenance
-
-Before publishing the full `Epitope_lib`, PDB structures, AbLang/IgFold/PyRosetta assets, and checkpoints, document their original sources and licenses. Add the corresponding citations and notices here or in a separate `CITATION.cff`/`NOTICE` file.
